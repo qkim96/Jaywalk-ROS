@@ -1,0 +1,24 @@
+name: project
+root: ~/ws_submission_<%= @settings["submission_id"] %>
+
+windows:
+  - benchmark:
+      layout: tiled
+      panes:
+        - shell: tmux detach
+        - core:
+          - roscore
+        - bridge:
+          - roslaunch --wait social_sim_ros sim_tcp_bridge.launch
+        - controller:
+          - roslaunch --wait <%= @settings["package"] %> submission.launch
+        - description:
+          - roslaunch --wait social_sim_ros kuri_description.launch
+        - map_publisher:
+          - rosrun social_sim_ros map_publisher.py
+        - trial_info:
+          - roslaunch --wait social_sim_ros submission_trial_info.launch datapath:=~/ws_submission_<%= @settings["submission_id"] %>/data submission_id:=<%= @settings["submission_id"] %>
+        - scan:
+          - roslaunch --wait social_sim_ros depth_to_laserscan.launch
+        - rviz:
+          - rosrun rviz rviz -d $(rospack find social_sim_ros)/config/move.rviz
