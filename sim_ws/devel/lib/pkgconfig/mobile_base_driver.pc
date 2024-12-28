@@ -1,0 +1,8 @@
+prefix=/home/qkim/test_simws/sim_ws/devel
+
+Name: mobile_base_driver
+Description: Description of mobile_base_driver
+Version: 14.3.1
+Cflags: -I/home/qkim/test_simws/sim_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

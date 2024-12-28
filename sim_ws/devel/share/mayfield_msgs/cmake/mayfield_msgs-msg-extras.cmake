@@ -1,0 +1,2 @@
+set(mayfield_msgs_MESSAGE_FILES "/home/qkim/test_simws/sim_ws/src/kuri/kuri_msgs/mayfield_msgs/msg/KeyValue.msg;/home/qkim/test_simws/sim_ws/src/kuri/kuri_msgs/mayfield_msgs/msg/KeyValueArray.msg;/home/qkim/test_simws/sim_ws/src/kuri/kuri_msgs/mayfield_msgs/msg/NodeStatus.msg")
+set(mayfield_msgs_SERVICE_FILES "/home/qkim/test_simws/sim_ws/src/kuri/kuri_msgs/mayfield_msgs/srv/SetString.srv;/home/qkim/test_simws/sim_ws/src/kuri/kuri_msgs/mayfield_msgs/srv/StringExchange.srv")

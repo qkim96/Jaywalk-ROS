@@ -1,0 +1,8 @@
+prefix=/home/qkim/test_simws/sim_ws/devel
+
+Name: may_nav_msgs
+Description: Description of may_nav_msgs
+Version: 14.3.1
+Cflags: -I/home/qkim/test_simws/sim_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs
